@@ -1,0 +1,58 @@
+{
+    "name": "sparkout/module-user-auth",
+    "description": "My awesome package",
+    "keywords": [
+        "sparkout",
+        "module-user-auth"
+    ],
+    "homepage": "https://github.com/sparkout/module-user-auth",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "sivabharathy",
+            "email": "gotocva@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sparkout/module-user-auth/issues",
+        "source": "https://github.com/sparkout/module-user-auth"
+    },
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "^5.8|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sparkout\\ModuleUserAuth\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sparkout\\ModuleUserAuth\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sparkout\\ModuleUserAuth\\ModuleUserAuthServiceProvider"
+            ],
+            "aliases": {
+                "ModuleUserAuth": "Sparkout\\ModuleUserAuth\\ModuleUserAuthFacade"
+            }
+        }
+    }
+}
