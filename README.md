@@ -1,4 +1,4 @@
-# Very short description of the package
+# User Authentication module
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sparkout/module-user-auth.svg?style=flat-square)](https://packagist.org/packages/sparkout/module-user-auth)
 [![Build Status](https://img.shields.io/travis/sparkout/module-user-auth/master.svg?style=flat-square)](https://travis-ci.org/sparkout/module-user-auth)
@@ -47,7 +47,3 @@ If you discover any security related issues, please email gotocva@gmail.com inst
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Composer Package Builder
-
-This package was generated using the [Composer Package Builder](https://github.com/huangdijia/composer-package-builder).

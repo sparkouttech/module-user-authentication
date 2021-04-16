@@ -6,6 +6,11 @@ use Illuminate\Support\ServiceProvider;
 
 class ModuleUserAuthServiceProvider extends ServiceProvider
 {
+    private static $routeOptions = [
+        'namespace' => 'Sparkout\ModuleUserAuth\Controllers',
+        'prefix' => '',
+    ];
+
     /**
      * Bootstrap the application services.
      */
@@ -18,6 +23,9 @@ class ModuleUserAuthServiceProvider extends ServiceProvider
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-user-auth');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
+        Route::group(self::$routeOptions, function () {
+            $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        });
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
