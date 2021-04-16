@@ -1,8 +1,8 @@
 <?php
 
 /*
- * You can place your custom package configuration in here.
+ * User module config values
  */
 return [
-
+    'key' => 'value',
 ];

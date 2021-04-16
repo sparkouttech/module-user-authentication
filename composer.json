@@ -1,6 +1,6 @@
 {
     "name": "sparkout/module-user-auth",
-    "description": "My awesome package",
+    "description": "User module package. To build robust user authentication in one click",
     "keywords": [
         "sparkout",
         "module-user-auth"
@@ -38,6 +38,10 @@
         }
     },
     "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --provider='Sparkout\\ModuleUserAuth\\ModuleUserAuthServiceProvider' --tag=config --force",
+            "@php artisan migrate"
+        ],
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
 

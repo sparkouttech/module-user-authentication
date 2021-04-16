@@ -3,6 +3,7 @@
 namespace Sparkout\ModuleUserAuth;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Route;
 
 class ModuleUserAuthServiceProvider extends ServiceProvider
 {
@@ -58,7 +59,7 @@ class ModuleUserAuthServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'module-user-auth');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'sparkout-user-auth');
 
         // Register the main class to use with the facade
         $this->app->singleton('module-user-auth', function () {

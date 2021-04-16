@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/sparkout/module-user-auth.svg?style=flat-square)](https://scrutinizer-ci.com/g/sparkout/module-user-auth)
 [![Total Downloads](https://img.shields.io/packagist/dt/sparkout/module-user-auth.svg?style=flat-square)](https://packagist.org/packages/sparkout/module-user-auth)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+User module package. To build robust user authentication in one click.
 
 ## Installation
 
