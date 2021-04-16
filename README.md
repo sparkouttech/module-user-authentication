@@ -1,7 +1,7 @@
 # User Authentication module
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sparkout/module-user-auth.svg?style=flat-square)](https://packagist.org/packages/sparkout/module-user-auth)
-[![Build Status](https://img.shields.io/travis/sparkout/module-user-auth/master.svg?style=flat-square)](https://travis-ci.org/sparkout/module-user-auth)
+<a href="https://packagist.org/packages/sparkout/module-user-auth"><img src="https://img.shields.io/packagist/l/sparkout/module-user-auth" alt="License"></a>
 [![Quality Score](https://img.shields.io/scrutinizer/g/sparkout/module-user-auth.svg?style=flat-square)](https://scrutinizer-ci.com/g/sparkout/module-user-auth)
 [![Total Downloads](https://img.shields.io/packagist/dt/sparkout/module-user-auth.svg?style=flat-square)](https://packagist.org/packages/sparkout/module-user-auth)
 
